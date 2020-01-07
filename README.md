@@ -12,7 +12,7 @@ We're going to take your homework from last night and:
 
 PLEASE NOTE:
 
-- IF you use the same repo as last night's homework for tonight's, *you will get a permanent incomplete on that homework.* DO NOT DO THIS.
+- IF you use the same repo as last night's homework for tonight's, *you will get a permanent incomplete on that homework.* Don't do that.
 - IF your homework from last night is incomplete, *you need to finish that before doing tonight's homework.*
 
 ![gif](https://media3.giphy.com/media/KEQzTcbdIvyaA/source.gif)
