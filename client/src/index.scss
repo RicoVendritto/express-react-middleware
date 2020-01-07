@@ -258,6 +258,7 @@ footer {
     rgba(148, 187, 233, 1) 100%
   );
   z-index: 0;
+  box-shadow: 5px 5px 5px darkgray;
 
   input {
     background: white;
@@ -269,6 +270,19 @@ footer {
     padding: 0vh 1vw;
     border-radius: 5px;
     border: 0.5px solid lightslategray;
+  }
+
+  .submit {
+    color: black;
+    transform: scale(1);
+    transition-property: transform, color, background-color;
+    transition-duration: 500ms;
+
+    &:hover {
+      transform: scale(1.05);
+      color: white;
+      background-color: black;
+    }
   }
 }
 

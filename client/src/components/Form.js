@@ -27,7 +27,7 @@ const Form = props => {
         name="sector"
         onChange={props.handleChange}
       />
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" className="submit" />
       <svg
         className="svgCard"
         xmlns="http://www.w3.org/2000/svg"
