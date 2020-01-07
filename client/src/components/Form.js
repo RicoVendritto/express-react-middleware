@@ -28,6 +28,16 @@ const Form = props => {
         onChange={props.handleChange}
       />
       <input type="submit" value="Submit" />
+      <svg
+                      className="svgCard"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1440 320"
+                    >
+                      <path
+                        fill="#000"
+                        d="M0,224L288,192L576,320L864,96L1152,0L1440,64L1440,320L1152,320L864,320L576,320L288,320L0,320Z"
+                      ></path>
+                    </svg>
     </form>
   );
 };

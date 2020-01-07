@@ -239,6 +239,40 @@ footer {
   }
 }
 
+.inputForm {
+  position: relative;
+  border: 0.5px solid lightslategray;
+  width: 35vw;
+  height: 20vh;
+  margin: 2vh;
+  padding: 2vh 5vw;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    0deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  z-index: 0;
+
+  input {
+    background: white;
+    opacity: .8;
+    z-index: 5;
+    width: 80%;
+    margin: .2vh;
+    height: 15%;
+    padding: 0vh 1vw;
+    border-radius: 5px;
+    border: 0.5px solid lightslategray;
+  }
+}
+
+
 @media only screen and (max-width: 1024px) {
   .AppContainer {
     visibility: hidden;
