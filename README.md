@@ -8,14 +8,16 @@ We're going to take your homework from last night and:
 - add a middleware that simply logs `Hello, world!` when you visit the `localhost:3000/people` route (hint: don't forget `next()`), and
 - add a form on the front end to create a new user and send that data to the back end.
 
+<br>
+
 PLEASE NOTE:
 
-IF you use the same repo as last night's homework for tonight's, *you will get a permanent incomplete on that homework.* DO NOT DO THIS.
-IF your homework from last night is incomplete, you need to finish that before doing tonight's homework.
+- IF you use the same repo as last night's homework for tonight's, *you will get a permanent incomplete on that homework.* DO NOT DO THIS.
+- IF your homework from last night is incomplete, *you need to finish that before doing tonight's homework.*
 
 ![gif](https://media3.giphy.com/media/KEQzTcbdIvyaA/source.gif)
 
-Please follow these instructions closely:
+Please follow these instructions closely and in precise order:
 
 1. Fork & clone this repo.
 2. `cd` into the repo.
@@ -25,7 +27,8 @@ Please follow these instructions closely:
 5. Run `node resetDb` and `node seed`.
 6. Run `npx create-react-app client`.
 7. Run `npm i axios`.
-8. Duplicate & move one file from last night's *completed* homework into this repo– `app.js`. 
+8. Duplicate & move one more file from last night's *completed* homework into this repo– `app.js`. 
   - Ensure you do *not* delete this file from last night's repo.
+  - Ensure you place the `app.js` in the correct folder, overwriting the native React's app's `app.js`.
 9. Finish this homework.
 10. Create a new pull request on this repo.
