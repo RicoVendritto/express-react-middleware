@@ -27,7 +27,7 @@ Please follow these instructions closely and in precise order:
   * Ensure you do *not* delete these files from last night's repo.
 4. Run `npm i`.
 5. Run `node resetDb` and `node seed`.
-6. Run `npx create-react-app client`.
+6. Run `npx create-react-app client` and `cd` into `client`.
 7. Run `npm i axios`.
 8. Duplicate & move one more file from last night's *completed* homework into this repo– `app.js`. 
   * Ensure you do *not* delete this file from last night's repo.
