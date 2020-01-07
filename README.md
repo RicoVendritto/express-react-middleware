@@ -32,5 +32,5 @@ Please follow these instructions closely and in precise order:
 8. Duplicate & move one more file from last night's *completed* homework into this repo– `app.js`. 
   * Ensure you do *not* delete this file from last night's repo.
   * Ensure you place the `app.js` in the correct folder, overwriting the native React's app's `app.js`.
-9. Finish this homework.
+9. Finish this homework by completing all three steps listed in the beginning of the `README.md`.
 10. Create a new pull request on this repo.
