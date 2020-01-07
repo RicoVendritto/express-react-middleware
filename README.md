@@ -4,7 +4,7 @@ This repository is an exact clone of last night's [Express React Homework](https
 
 *PLEASE NOTE:*
 
-If you use the same repo as last night's homework, you will get a permanent incomplete on last night's homework. *DO NOT DO THIS.* Please follow these instructions closely:
+If you use the same repo as last night's homework, you will get a permanent incomplete on that homework. *DO NOT DO THIS.* Please follow these instructions closely:
 
 1. Fork & clone this repo.
 2. `cd` into the repo.
