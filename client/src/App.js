@@ -11,10 +11,12 @@ class App extends Component {
     this.state = {
       people: [],
       apiLoaded: false,
-      name: "Richard",
-      company: "Rico Corp",
-      role: "CEO",
-      sector: "Finance"
+      fields: {
+        name: null,
+        company: null,
+        role: null,
+        sector: null
+      }
     };
   }
 
@@ -30,7 +32,10 @@ class App extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.setState({
-      [name]: value
+      field: {
+        ...this.state.field,
+        [name]: value
+      }
     });
   };
 
@@ -38,12 +43,9 @@ class App extends Component {
     e.preventDefault();
     console.log("submit");
     await axios
-      .post("http://localhost:3000/post", {
-        name: this.state.name,
-        company: this.state.company,
-        role: this.state.role,
-        sector: this.state.sector
-      })
+      .post("http://localhost:3000/post", 
+        this.state.field
+      )
       .then(resp => {
         console.log(resp);
       })
