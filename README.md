@@ -1,6 +1,6 @@
 # Business Card Middleware
 
-This repository is an exact clone of last night's [Express React Homework](https://git.generalassemb.ly/sei-nyc-cheetahs/express-react-middleware) repo. We're going to take your homework from last night and 1) add `morgan` and `body parser`, 2) add a middleware that simply logs `Hello, world!` when you visit the `localhost:3000/people` route (hint: don't forget `next()`), and 3) add a form on the fron end to create a new user and send that to the back end.
+This repository is an exact clone of last night's [Express React Homework](https://git.generalassemb.ly/sei-nyc-cheetahs/express-react-middleware) repo. We're going to take your homework from last night and 1) add `morgan` and `body parser`, 2) add a middleware that simply logs `Hello, world!` when you visit the `localhost:3000/people` route (hint: don't forget `next()`), and 3) add a form on the front end to create a new user and send that to the back end.
 
 *PLEASE NOTE:*
 
