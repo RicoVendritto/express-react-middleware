@@ -1,0 +1,249 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+$faw: "Font Awesome 5 Free";
+
+.App,
+body {
+  margin: 0 auto;
+  background-color: rgb(226, 226, 226);
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+  padding: 3vh;
+  border: 0.5px solid lightslategray;
+  background-color: white;
+  display: block;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
+  box-shadow: 5px 5px 5px darkgray;
+
+  &::before {
+    content: open-quote;
+    display: inline-block;
+  }
+
+  &::after {
+    content: close-quote;
+    display: inline-block;
+  }
+}
+
+main {
+  margin: 12vh auto 10vh 0;
+  z-index: 1;
+}
+
+footer {
+  font-size: 1em;
+  color: black;
+  padding: 3vh;
+  border: 0.5px solid lightslategray;
+  background-color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 5;
+  box-shadow: -5px -5px 5px darkgray;
+}
+
+.PersonCard {
+  border: 0.5px solid lightslategray;
+  width: 35vw;
+  height: 20vh;
+  margin: 2vh;
+  padding: 2vh 5vw;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  box-shadow: 5px 5px 5px darkgray;
+  transform: scale();
+  transition-property: transform;
+  transition-duration: 250ms;
+  position: relative;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    0deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  z-index: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+    opacity: 1;
+    transition: transform ease-out 250ms;
+    z-index: 5;
+  }
+
+  &::before {
+    border-top: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+    transform: scale(0, 1);
+  }
+
+  &::after {
+    border-left: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+    transform: scale(1, 0);
+  }
+
+  &:hover::before {
+    transform: scale(1.02, 1);
+  }
+
+  &:hover::after {
+    transform: scale(1, 1.05);
+  }
+}
+
+.PersonCard:hover {
+  transform: scale(1.05);
+}
+
+.personCard {
+  position: relative;
+
+  &::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 2.5vh;
+    height: 1vw;
+    font-family: $faw;
+    font-weight: 900;
+    font-size: 0.8em;
+    content: "\f2b9";
+    position: absolute;
+    top: 0.5vh;
+    left: -2.5vw;
+  }
+}
+
+.companyCard {
+  position: relative;
+
+  &::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 2.5vh;
+    height: 1vw;
+    font-family: $faw;
+    font-weight: 900;
+    content: "\f015";
+    position: absolute;
+    top: 0vh;
+    left: -2.5vw;
+  }
+}
+
+.roleCard {
+  position: relative;
+
+  &::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 2.5vh;
+    height: 1vw;
+    font-family: $faw;
+    font-weight: 900;
+    content: "\f2c1";
+    position: absolute;
+    left: -1.8vw;
+    top: 0vh;
+    left: -2.5vw;
+  }
+}
+
+.sectorCard {
+  position: relative;
+
+  &::before {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 2.5vh;
+    height: 1vw;
+    font-family: $faw;
+    font-weight: 900;
+    content: "\f0a3";
+    position: absolute;
+    top: 0vh;
+    left: -2.5vw;
+  }
+}
+
+.svgCard {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0.25;
+}
+
+.blockContainer {
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+
+  p {
+    z-index: 501;
+    font-size: 5em;
+    font-weight: 900;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .AppContainer {
+    visibility: hidden;
+  }
+  .blockContainer {
+    visibility: visible;
+  }
+}
