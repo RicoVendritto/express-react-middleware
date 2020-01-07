@@ -17,18 +17,20 @@ PLEASE NOTE:
 
 ![gif](https://media3.giphy.com/media/KEQzTcbdIvyaA/source.gif)
 
+<br>
+
 Please follow these instructions closely and in precise order:
 
 1. Fork & clone this repo.
 2. `cd` into the repo.
 3. Duplicate & move two files from last night's *completed* homework into this repo– `index.js` and `package.json`. 
-  - Ensure you do *not* delete these files from last night's repo.
+  * Ensure you do *not* delete these files from last night's repo.
 4. Run `npm i`.
 5. Run `node resetDb` and `node seed`.
 6. Run `npx create-react-app client`.
 7. Run `npm i axios`.
 8. Duplicate & move one more file from last night's *completed* homework into this repo– `app.js`. 
-  - Ensure you do *not* delete this file from last night's repo.
-  - Ensure you place the `app.js` in the correct folder, overwriting the native React's app's `app.js`.
+  * Ensure you do *not* delete this file from last night's repo.
+  * Ensure you place the `app.js` in the correct folder, overwriting the native React's app's `app.js`.
 9. Finish this homework.
 10. Create a new pull request on this repo.
