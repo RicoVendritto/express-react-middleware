@@ -40,7 +40,7 @@ class App extends Component {
   };
 
   handleSubmit = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log("submit");
     await axios
       .post("http://localhost:3000/post", 
