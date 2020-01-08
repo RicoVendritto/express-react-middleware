@@ -8,24 +8,28 @@ const Form = props => {
         placeholder="name"
         name="name"
         onChange={props.handleChange}
+        required
       />
       <input
         type="text"
         placeholder="company"
         name="company"
         onChange={props.handleChange}
+        rquired
       />
       <input
         type="text"
         placeholder="role"
         name="role"
         onChange={props.handleChange}
+        required
       />
       <input
         type="text"
         placeholder="sector"
         name="sector"
         onChange={props.handleChange}
+        required
       />
       <input type="submit" value="Submit" className="submit" />
       <svg
