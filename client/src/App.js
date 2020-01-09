@@ -39,25 +39,19 @@ class App extends Component {
     });
   };
 
-  handleSubmit = async (e) => {
+  handleSubmit = async e => {
     // e.preventDefault();
     console.log("submit");
     await axios
-      .post("http://localhost:3000/post", 
-        this.state.field
+      .post("http://localhost:3000/post", this.state.field)
+      .then(resp =>
+        this.setState({
+          people: [...this.state.people, this.state.field]
+        })
       )
-      .then(resp => {
-        console.log(resp);
-      })
       .catch(err => {
         console.log(err);
       });
-    this.setState({
-      name: null,
-      company: null,
-      role: null,
-      sector: null
-    })
   };
 
   render() {
@@ -71,7 +65,7 @@ class App extends Component {
               handleSubmit={this.handleSubmit}
             />
             {this.state.apiLoaded ? (
-              <div>
+              <div className="output">
                 {this.state.people.map((person, index) => (
                   <div key={index} className="PersonCard">
                     <h2 className="personCard">{person.name}</h2>

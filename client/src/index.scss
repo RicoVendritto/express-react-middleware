@@ -21,6 +21,13 @@ footer {
   align-items: center;
 }
 
+.output {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   font-size: 2em;
   font-weight: 900;
