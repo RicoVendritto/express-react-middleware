@@ -44,7 +44,7 @@ class App extends Component {
     console.log("submit");
     await axios
       .post("http://localhost:3000/post", this.state.field)
-      .then(resp =>
+      .then(
         this.setState({
           people: [...this.state.people, this.state.field]
         })
